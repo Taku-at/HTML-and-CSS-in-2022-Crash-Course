@@ -195,7 +195,15 @@ section.hero {
 
 }
 
+/* Extra Adding class by JavaScript
+================================================== */
 
+.open-nav {
+    transform: translateX(0);
+}
+
+/* Media Query
+================================================== */
 @media only screen and(min-width: 680px) {
     body {
         margin: 1.5em 5em;

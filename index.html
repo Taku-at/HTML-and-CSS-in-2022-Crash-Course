@@ -36,7 +36,7 @@
 
         <nav class="header__nav" aria-label="navigation">
 
-          <i class="icon ion-md-close header__nav--close"></i>
+          <i id="close" class="icon ion-md-close header__nav--close"></i>
 
           <ul>
             <li><a href="#home">Home</a></li>
@@ -46,7 +46,7 @@
         </nav>
 
         <!-- Or use svg file -->
-        <i class="icon ion-md-menu header__menu-icon"></i>
+        <i id="menu" class="icon ion-md-menu header__menu-icon"></i>
       </header>
 
       <main class="main">
@@ -121,6 +121,24 @@
       </main>
     </div>
 
-    <script src="main.js"></script>
+    <script>
+      const menu = document.querySelector('#menu');
+      const close = document.querySelector('#close');
+      const nav = document.querySelector('nav');
+
+      // Open Nav
+      menu.addEventListener('click', () => {
+        // document.querySelector('nav').classList.add('open-nav');
+        nav.classList.add('open-nav');
+      })
+
+      // Close Nav
+      close.addEventListener('click', () => {
+        // document.querySelector('nav').classList.add('open-nav');
+        nav.classList.remove('open-nav');
+      })
+
+
+    </script>
   </body>
 </html>
