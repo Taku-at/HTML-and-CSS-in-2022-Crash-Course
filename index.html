@@ -4,7 +4,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn HTML & CSS in 2022 | Crash Course</title>
-    <link rel="stylesheet" href="./">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
   </head>
-  <body></body>
+  <body id="body">
+    <!-- <img src="https://dr.savee-cdn.com/things/5/9/77a71de9a05622f19db22e.jpg" alt="" aria-label="Banner image: Heel and Feoot"> -->
+
+    <div class="hero-img"></div>
+    <!-- Everything wrap -->
+    <div class="wrapper">
+      <header class="header">
+        <!-- Logo is typically img or svg -->
+        <a
+          href="#https://example-website.com"
+          class="header__logo"
+          aria-lebel="link"
+          >Shoe<span>Brand</span></a
+        >
+
+        <nav class="header__nav" aria-label="navigation">
+
+          <i class="icon ion-md-close header__nav--close"></i>
+
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">Sneakers</a></li>
+            <li><a href="#home">Players</a></li>
+          </ul>
+        </nav>
+
+        <!-- Or use svg file -->
+        <i class="icon ion-md-menu header__menu-icon"></i>
+      </header>
+
+      <main class="main">
+        <section class="hero">
+          <h1>Regain your confidence on the court.</h1>
+
+          <p class="hero__subhead">
+            A shoe built with purpose and Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Sint maiores voluptates repudiandae
+            cum consequatur iure!
+          </p>
+
+          <svg
+            class="down-arrow"
+            viewBox="0 0 16 132"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z"
+              fill="black"
+            />
+          </svg>
+        </section>
+
+        <section class="more-info">
+          <div class="feature">
+            <div class="feature__content">
+              <p class="feature__content-title">Lightweight</p>
+              <p class="feature__content-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                tenetur nostrum dolorum at neque omnis aspernatur sequi, beatae
+                hic fuga.
+              </p>
+            </div>
+            <img
+              src="https://dr.savee-cdn.com/things/6/1/c0bf5c3b2b154a092fc6c7.jpg"
+              alt="Another Shoe"
+            />
+          </div>
+
+          <div class="feature left reverse">
+            <div class="feature__content">
+              <p class="feature__content-title">Lightweight</p>
+              <p class="feature__content-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                tenetur nostrum dolorum at neque omnis aspernatur sequi, beatae
+                hic fuga.
+              </p>
+            </div>
+            <img
+              src="https://dr.savee-cdn.com/things/6/1/64805b0e69492ef09b8189.jpg"
+              alt="Another Shoe"
+            />
+          </div>
+
+          <div class="feature">
+            <div class="feature__content">
+              <p class="feature__content-title">Lightweight</p>
+              <p class="feature__content-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                tenetur nostrum dolorum at neque omnis aspernatur sequi, beatae
+                hic fuga.
+              </p>
+            </div>
+            <img
+              src="https://dr.savee-cdn.com/things/5/d/2633b922a4354c8a3555dd.jpg"
+              alt="Another Shoe"
+            />
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
